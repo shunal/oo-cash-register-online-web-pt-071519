@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 require "pry"
 class CashRegister
   
@@ -44,3 +45,22 @@ class CashRegister
   end
   
 end
+=======
+require "pry"
+class CashRegister
+  
+  attr_accessor :total, :discount
+  def initialize(discount = 0)
+    @total = 0
+    @discount = discount
+    @items = []
+  end
+  
+  def add_item(title, price)
+    @items << title
+    new_total = total + price
+    new_total
+  end
+  
+end
+>>>>>>> 59bcb55d526517d7eda61c25968efa5bd35a6149
